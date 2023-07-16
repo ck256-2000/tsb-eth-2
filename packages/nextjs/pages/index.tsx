@@ -1,63 +1,51 @@
 import Link from "next/link";
+import { Connect } from "~~/components/connect/Connect";
+import { Stats } from "~~/components/stats/Stats";
+import { Players } from "~~/components/players/Players";
 import type { NextPage } from "next";
-import { BugAntIcon, MagnifyingGlassIcon, SparklesIcon } from "@heroicons/react/24/outline";
+import { BugAntIcon, MagnifyingGlassIcon, SparklesIcon, FireIcon, UserGroupIcon, DocumentChartBarIcon, RocketLaunchIcon } from "@heroicons/react/24/outline";
 import { MetaHeader } from "~~/components/MetaHeader";
 
 const Home: NextPage = () => {
   return (
     <>
       <MetaHeader />
-      <div className="flex items-center flex-col flex-grow pt-10">
-        <div className="px-5">
-          <h1 className="text-center mb-8">
-            <span className="block text-2xl mb-2">Welcome to</span>
-            <span className="block text-4xl font-bold">Scaffold-ETH 2</span>
-          </h1>
-          <p className="text-center text-lg">
-            Get started by editing{" "}
-            <code className="italic bg-base-300 text-base font-bold">packages/nextjs/pages/index.tsx</code>
-          </p>
-          <p className="text-center text-lg">
-            Edit your smart contract <code className="italic bg-base-300 text-base font-bold">YourContract.sol</code> in{" "}
-            <code className="italic bg-base-300 text-base font-bold">packages/hardhat/contracts</code>
-          </p>
-        </div>
+      <Connect />
+      <div className="flex items-center flex-col flex-grow pt-0">
+        
 
-        <div className="flex-grow bg-base-300 w-full mt-16 px-8 py-12">
+        <div className="flex-grow  w-full mt-1 px-8 py-1">
           <div className="flex justify-center items-center gap-12 flex-col sm:flex-row">
             <div className="flex flex-col bg-base-100 px-10 py-10 text-center items-center max-w-xs rounded-3xl">
-              <BugAntIcon className="h-8 w-8 fill-secondary" />
+              <FireIcon className="h-12 w-12 fill-secondary" />
               <p>
-                Tinker with your smart contract using the{" "}
-                <Link href="/debug" passHref className="link">
-                  Debug Contract
-                </Link>{" "}
-                tab.
+                BURN SHIB {" "} <br/>
+                Chance to get 10X back!
+                
               </p>
             </div>
             <div className="flex flex-col bg-base-100 px-10 py-10 text-center items-center max-w-xs rounded-3xl">
-              <SparklesIcon className="h-8 w-8 fill-secondary" />
+              <UserGroupIcon className="h-12 w-12 fill-secondary" />
               <p>
-                Experiment with{" "}
-                <Link href="/example-ui" passHref className="link">
-                  Example UI
-                </Link>{" "}
-                to build your own UI.
+                Pick your Burn{" "} <br/>
+                Join a Furnace!
+                
               </p>
             </div>
             <div className="flex flex-col bg-base-100 px-10 py-10 text-center items-center max-w-xs rounded-3xl">
-              <MagnifyingGlassIcon className="h-8 w-8 fill-secondary" />
+              <RocketLaunchIcon className="h-12 w-12 fill-secondary" />
               <p>
-                Explore your local transactions with the{" "}
-                <Link href="/blockexplorer" passHref className="link">
-                  Block Explorer
-                </Link>{" "}
-                tab.
+                Reward Per Burn!{" "}<br/>
+                Drive SHIB Price UP!
+
+                
               </p>
             </div>
           </div>
         </div>
       </div>
+      <Players />
+      <Stats />
     </>
   );
 };

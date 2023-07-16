@@ -38,7 +38,7 @@ export const Footer = () => {
                 rel="noreferrer"
                 className="underline underline-offset-2"
               >
-                Fork me
+                Take this project
               </a>
             </div>
             <span>·</span>
@@ -61,7 +61,7 @@ export const Footer = () => {
                 rel="noreferrer"
                 className="underline underline-offset-2"
               >
-                Support
+                Support Me
               </a>
             </div>
           </div>

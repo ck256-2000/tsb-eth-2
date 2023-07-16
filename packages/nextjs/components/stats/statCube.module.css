@@ -1,0 +1,52 @@
+.player-container {
+  height: auto;
+  background-color: rgb(25, 31, 40);
+  background-image: url("/images/fire.gif");
+  background-size: cover;
+ 
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 240px;
+}
+
+.player-description-container {
+
+  background-color: rgb(52, 76, 105);
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.player-description-container-top {
+  display: flex;
+  align-items: middle;
+  background-color: rgb(52, 76, 105);
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  gap: 10px;
+  padding-left: 10px;
+  width: 100%;
+}
+
+.player-position-text,
+.player-title-text {
+  color: white;
+  font-size: 14px;
+}
+
+.player-address-text {
+  color: rgb(206, 204, 204);
+  
+}
+
+@media screen and (max-width: 500px) {
+  .player-container {
+    width: 90%;
+    gap: 30px;
+  }
+}

@@ -30,6 +30,11 @@ export const ContractData = () => {
     functionName: "greeting",
   });
 
+  const { data: totalGames } = useScaffoldContractRead({
+    contractName: "TSBGame01",
+    functionName: "getTotalGames",
+  });
+
   useScaffoldEventSubscriber({
     contractName: "YourContract",
     eventName: "GreetingChange",
@@ -71,7 +76,7 @@ export const ContractData = () => {
   }, [transitionEnabled, containerRef, greetingRef]);
 
   return (
-    <div className="flex flex-col justify-center items-center bg-[url('/assets/gradient-bg.png')] bg-[length:100%_100%] py-10 px-5 sm:px-0 lg:py-auto max-w-[100vw] ">
+    <div className="flex flex-col justify-center items-center  bg-[length:100%_100%] py-10 px-5 sm:px-0 lg:py-auto max-w-[100vw] ">
       <div
         className={`flex flex-col max-w-md bg-base-200 bg-opacity-70 rounded-2xl shadow-lg px-5 py-4 w-full ${
           showAnimation ? "animate-zoom" : ""
@@ -91,7 +96,7 @@ export const ContractData = () => {
             />
           </button>
           <div className="bg-secondary border border-primary rounded-xl flex">
-            <div className="p-2 py-1 border-r border-primary flex items-end">Total count</div>
+            <div className="p-2 py-1 border-r border-primary flex items-end">Player count/Game Count {totalGames?.toString()}</div>
             <div className="text-4xl text-right min-w-[3rem] px-2 py-1 flex justify-end font-bai-jamjuree">
               {totalCounter?.toString() || "0"}
             </div>

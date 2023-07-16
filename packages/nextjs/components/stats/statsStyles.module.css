@@ -1,0 +1,43 @@
+.stats-container {
+  display: flex;
+  margin-top: 100px;
+  margin-bottom: 50px;
+  flex-wrap: wrap;
+  gap: 250px;
+  justify-content: center;
+  background-color: rgb(20, 79, 152);
+}
+
+.return-rate-title {
+  color: white;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.return-rate-value {
+  color: rgb(43, 104, 247);
+  font-size: 50px;
+  font-weight: 700;
+  margin-top: 1px;
+  margin-bottom: 1px;
+}
+
+.return-rate-status {
+  color: lightgray;
+}
+
+.return-rate-container {
+  text-align: center;
+}
+
+@media screen and (max-width: 1100px) {
+  .stats-container {
+    gap: 80px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .stats-container {
+    flex-direction: column;
+  }
+}

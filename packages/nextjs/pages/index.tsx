@@ -1,4 +1,4 @@
-import Link from "next/link";
+
 import { Connect } from "~~/components/connect/Connect";
 import { Stats } from "~~/components/stats/Stats";
 import { Players } from "~~/components/players/Players";
@@ -21,9 +21,7 @@ const Home: NextPage = () => {
               <p>
                 BURN SHIB {" "} <br/>
                 Chance to get 10X back!
-                <Link href="/blockexplorer">
-                  <a className="text-secondary">Learn More</a>
-                </Link>
+           
                 
               </p>
             </div>

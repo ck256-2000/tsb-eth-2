@@ -104,8 +104,8 @@ const rewardmultiple = ((Number(amtToReward)/100)*Number(intPlayers)).toFixed(1)
   return (
     <>
       <MetaHeader
-        title="TSB UI - Scaffold - ETH 2  "
-        description="Example UI created with 🏗 Scaffold-ETH 2, showcasing some of its features."
+        title="Trillion SHIB Burn"
+        description="Let's burn 20 Trillion SHIB!"
       >
         {/* We are importing the font this way to lighten the size of SE2. */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />

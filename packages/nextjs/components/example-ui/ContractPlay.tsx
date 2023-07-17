@@ -44,7 +44,7 @@ export const ContractPlay = () => {
               type="text"
               placeholder="Write your greeting here"
               className="input font-bai-jamjuree w-full px-5 bg-[url('/assets/gradient-bg.png')] bg-[length:100%_100%] border border-primary text-lg sm:text-2xl placeholder-white uppercase"
-              onChange={e => setEntryfeeplayer((e.target.value))}
+              onChange={e => setEntryfeeplayer((Number(e.target.value)))}
             />
             <div className="flex rounded-full border border-primary p-1 flex-shrink-0">
               <div className="flex rounded-full border-2 border-primary p-1">

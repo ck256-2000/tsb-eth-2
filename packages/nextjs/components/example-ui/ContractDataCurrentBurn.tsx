@@ -8,7 +8,7 @@ import {
   useScaffoldEventHistory,
   useScaffoldEventSubscriber,
 } from "~~/hooks/scaffold-eth";
-import { IntegerInput } from "../scaffold-eth";
+
 
 const MARQUEE_PERIOD_IN_SEC = 15;
 
@@ -62,7 +62,7 @@ export const ContractDataCurrentBurn = () => {
   const rewardmultiple = ((Number(amtToReward)/100)*Number(totalPlayersInGame)).toFixed(1)+'X';
  
 
-
+/*
   useScaffoldEventSubscriber({
     contractName: "TSBGame01",
     eventName: "PlayerJoined",
@@ -73,6 +73,8 @@ export const ContractDataCurrentBurn = () => {
       });
     },
   });
+
+  */
 
   const {
     data: myGreetingChangeEvents,

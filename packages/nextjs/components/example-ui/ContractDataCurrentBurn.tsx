@@ -84,7 +84,7 @@ export const ContractDataCurrentBurn = () => {
     contractName: "TSBGame01",
     eventName: "PlayerJoined",
     fromBlock: process.env.NEXT_PUBLIC_DEPLOY_BLOCK ? BigInt(process.env.NEXT_PUBLIC_DEPLOY_BLOCK) : 0n,
-    filters: { player: address},
+  
     blockData: true,
   });
 

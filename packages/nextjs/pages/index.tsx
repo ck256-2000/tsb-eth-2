@@ -3,17 +3,17 @@ import { Connect } from "~~/components/connect/Connect";
 import { Stats } from "~~/components/stats/Stats";
 import { Players } from "~~/components/players/Players";
 import type { NextPage } from "next";
-import { BugAntIcon, MagnifyingGlassIcon, SparklesIcon, FireIcon, UserGroupIcon, DocumentChartBarIcon, RocketLaunchIcon } from "@heroicons/react/24/outline";
+import { FireIcon, UserGroupIcon, RocketLaunchIcon } from "@heroicons/react/24/outline";
 import { MetaHeader } from "~~/components/MetaHeader";
 
 const Home: NextPage = () => {
   return (
     <>
       <MetaHeader />
-      <Connect />
+     
       <div className="flex items-center flex-col flex-grow pt-0">
         
-
+      <Connect />
         <div className="flex-grow  w-full mt-1 px-8 py-1">
           <div className="flex justify-center items-center gap-12 flex-col sm:flex-row">
             <div className="flex flex-col bg-base-100 px-10 py-10 text-center items-center max-w-xs rounded-3xl">
@@ -21,6 +21,9 @@ const Home: NextPage = () => {
               <p>
                 BURN SHIB {" "} <br/>
                 Chance to get 10X back!
+                <Link href="/blockexplorer">
+                  <a className="text-secondary">Learn More</a>
+                </Link>
                 
               </p>
             </div>

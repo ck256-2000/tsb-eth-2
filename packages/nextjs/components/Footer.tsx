@@ -19,7 +19,7 @@ export const Footer = () => {
           <div className="flex space-x-2 pointer-events-auto">
             {nativeCurrencyPrice > 0 && (
               <div className="btn btn-primary btn-sm font-normal cursor-auto">
-                <CurrencyDollarIcon className="h-4 w-4 mr-0.5" />
+                <CurrencyDollarIcon className="h-4 w-4 mr-0.5" /> ETH 
                 <span>{nativeCurrencyPrice}</span>
               </div>
             )}
@@ -38,20 +38,26 @@ export const Footer = () => {
                 rel="noreferrer"
                 className="underline underline-offset-2"
               >
-                Take this project
-              </a>
+                Built on Scaffold-Eth-2              </a>
             </div>
             <span>·</span>
-            <div>
-              Built with <HeartIcon className="inline-block h-4 w-4" /> at 🏰{" "}
+            <div className="justify-center">
+              Built with <HeartIcon className="inline-block h-4 w-4" /> by ck256/welts in association{" "}
+              <br />
               <a
-                href="https://buidlguidl.com/"
+                href="https://dumpsterfiregames.io"
                 target="_blank"
                 rel="noreferrer"
                 className="underline underline-offset-2"
               >
-                BuidlGuidl
-              </a>
+                Dumpsterfiregames.io 
+              </a> && 
+              <a
+                href="https://undercurrents.com"
+                target="_blank"
+                rel="noreferrer"
+                className="underline underline-offset-2"
+              > Undercurrents</a>
             </div>
             <span>·</span>
             <div>

@@ -12,6 +12,7 @@ export const Connect = () => {
     <div className={styles["connect-container"]}>
       <div className={styles["connect-image"]}>
         <Image
+          layout="responsive"
           src={HeaderData.image}
           height={280}
           width={300}
@@ -23,12 +24,14 @@ export const Connect = () => {
        
         <div className={styles["connect-image"]}>
         <Image
+          layout="responsive"
           src={HeaderData.image2}
-          height={200}
-          width={500}
+         height={200}
+          width="500"
           className={styles["image"]}
           alt="header"
           priority={true}
+          //style={{objectFit: "cover"}}
         />
       </div>
 

@@ -171,7 +171,7 @@ const approveShibSpend = async () => {
         <div className="mt-3 flex items-end justify-between">
          
           <div className="flex flex-col">
-          <p className="flex font-bai-jamjuree justify-center text-[40px]">odds:{rewardodds} </p>
+          <p className="flex font-bai-jamjuree justify-center text-[20px]">odds:{rewardodds} </p>
           </div>
 
 
@@ -184,17 +184,12 @@ const approveShibSpend = async () => {
                 >
                   {!isLoading && (
                     <>
-                      SHIB!<ArrowSmallRightIcon className="w-3 h-3 mt-0.5" />
+                     Approve!
                     </>
                   )}
                 </button>
               </div>
 
-
-
-
-        
-          <div className="flex rounded-full border border-primary p-1 flex-shrink-0">
               <div className="flex rounded-full border-2 border-primary p-1">
                 <button
                   className={`btn btn-primary rounded-full capitalize font-normal font-white w-24 flex items-center gap-1 hover:gap-2 transition-all tracking-widest ${
@@ -209,7 +204,7 @@ const approveShibSpend = async () => {
                   )}
                 </button>
               </div>
-            </div>
+            
 
           
         </div>
